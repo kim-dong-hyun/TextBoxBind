@@ -12,6 +12,6 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
         <TextBox Grid.Row="0" Text="{Binding InputText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="42,29,0,0" Grid.Row="1" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button" Content="Add Text" HorizontalAlignment="Left" Margin="42,29,0,0" Grid.Row="1" VerticalAlignment="Top" Click="button_Click"/>
     </Grid>
 </Window>

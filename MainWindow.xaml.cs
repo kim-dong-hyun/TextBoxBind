@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -53,7 +54,9 @@ namespace TextBoxBind
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            InputText += "AAA";
+            Thread thread = new Thread(new ThreadStart(() => InputText += "AAA"));
+            thread.IsBackground = true;
+            thread.Start();
         }
     }
 }
